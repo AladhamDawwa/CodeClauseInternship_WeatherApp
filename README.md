@@ -1,5 +1,5 @@
 # Weather App
-## :satellite: **[Click to See Debloyed Website](https://aladhamdawwa.github.io/LandingPage/)**
+## :satellite: **[Click to See Debloyed Website](https://aladham-weatherapp.vercel.app/)**
 ## :memo: Description
 This is a Weather App built using React + Vite.
 ## :warning: Prerequisites
