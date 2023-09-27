@@ -1,8 +1,9 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Weather App
+## :satellite: **[Click to See Deployed Website](https://aladham-weatherapp.vercel.app/)**
+## :memo: Description
+This is a Weather App built using React + Vite.
+## :warning: Prerequisites
+You need to install node and npm to run the project locally.
+## :gear: Local run
+First - install npm packages : npm install\
+Second - run project locally : npm run dev
