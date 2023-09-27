@@ -21,7 +21,7 @@ const Weather = ({weather}) => {
     <div className="weather">
       <CurrentLocation details={{city, country}}/>
       <div className="weather-box">
-        <WeatherMain weatherData={weatherData} setWeatherData={setWeatherData}/>
+        <WeatherMain Location={city} weatherData={weatherData} setWeatherData={setWeatherData}/>
         <WeatherDetails details={{humidity,speed}}/>
       </div>
 

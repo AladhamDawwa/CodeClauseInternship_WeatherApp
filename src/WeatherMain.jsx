@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 let CtoF = (temperature, deg)=>{
   if(deg === 'C'){
@@ -8,15 +8,23 @@ let CtoF = (temperature, deg)=>{
   }
 }
 
-const WeatherMain = ({weatherData,weatherData : {temp, description, icon}, setWeatherData, }) => {
+const WeatherMain = ({Location, weatherData,weatherData : {temp, description, icon}, setWeatherData, }) => {
   const [deg, setDeg] = useState('C');
+  useEffect(()=>{
+    setDeg('C');
+  },[Location]);
   return (
-    <><img src={`./images/${icon}.png`} /><p onClick={() => {
-      const [temperature, degree] = CtoF(temp, deg);
-      setWeatherData({ ...weatherData, temp: temperature });
-      setDeg(degree);
-    } }
-      className="temperature">{Math.round(temp)}<span>°{deg}</span></p><p className="description">{description}</p></>
+    <>
+      <img src={`./images/${icon}.png`} />
+      <p onClick={() => {
+        const [temperature, degree] = CtoF(temp, deg);
+        setWeatherData({ ...weatherData, temp: temperature });
+        setDeg(degree);
+      }} className="temperature">
+        {Math.round(temp)}<span>°{deg}</span>
+      </p>
+      <p className="description">{description}</p>
+    </>
   )
 }
 export default WeatherMain
